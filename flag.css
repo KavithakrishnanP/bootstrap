@@ -1,0 +1,41 @@
+.body{
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.flag{
+    height:250px;
+    width:100%;
+    /* object-fit:cover; */
+}
+
+.flag-container{
+    background-color: white;
+    border-radius: 10px;
+    margin:2px;
+    overflow:hidden;
+    /* background-color:grey; */
+    box-shadow:rgba(0,0,0,0.1) 0px 4px 12px;
+}
+
+.details{
+    padding: 10px;
+}
+
+section{
+    display:grid;
+    grid-template-columns: 1fr;
+    row-gap:10px;
+    column-gap:10px;
+}
+
+@media(min-width:450px){
+    section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width:650px){
+    section{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
